@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Globe, Menu, X } from "lucide-react";
-import sanadLogo from "@/assets/sanad-youth.png.asset.json";
-import unfpaLogo from "@/assets/unfpa-syria.png.asset.json";
+import sanadLogo from "@/assets/sanad-youth.png";
+import unfpaLogo from "@/assets/unfpa-syria.webp";
 import { useLang } from "@/lib/lang";
 import { REGISTER_URL } from "@/lib/content";
 import { cn } from "@/lib/utils";
@@ -39,7 +39,7 @@ export function Header() {
       <div className="mx-auto flex h-20 max-w-7xl items-center gap-4 px-4 sm:px-6 lg:px-8">
         <a href="#home" className="flex shrink-0 items-center" aria-label="Sanad Youth for Development">
           <img
-            src={sanadLogo.url}
+            src={sanadLogo}
             alt="Sanad Youth for Development"
             width={160}
             height={190}
@@ -80,7 +80,7 @@ export function Header() {
           </a>
 
           <img
-            src={unfpaLogo.url}
+            src={unfpaLogo}
             alt="UNFPA Syria"
             width={192}
             height={62}
