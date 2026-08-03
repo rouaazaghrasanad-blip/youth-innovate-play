@@ -13,9 +13,12 @@ export function Header() {
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
+
     onScroll();
 
-    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("scroll", onScroll, {
+      passive: true,
+    });
 
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
@@ -40,20 +43,18 @@ export function Header() {
           : "bg-transparent"
       )}
     >
-      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-2 px-3 sm:px-6 lg:px-8">
+      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-3 sm:px-6 lg:px-8">
 
         {/* Sanad Logo */}
         <a
           href="#home"
-          className="flex min-w-0 shrink items-center"
+          className="flex shrink-0 items-center"
           aria-label="Sanad Youth for Development"
         >
           <img
             src={sanadLogo}
             alt="Sanad Youth for Development"
-            width={160}
-            height={190}
-            className="h-9 w-auto object-contain sm:h-12"
+            className="h-10 w-auto object-contain sm:h-12"
           />
         </a>
 
@@ -75,21 +76,21 @@ export function Header() {
         </nav>
 
 
-        {/* Actions */}
+        {/* Right Side */}
         <div className="flex shrink-0 items-center gap-2">
 
-          {/* Language */}
+          {/* Language - Desktop only */}
           <button
             type="button"
             onClick={toggle}
-            className="inline-flex items-center gap-1.5 rounded-full border border-border/70 bg-card/70 px-2.5 py-2 text-xs font-semibold text-foreground transition-colors hover:border-brand-violet hover:text-brand-violet sm:px-3"
+            className="hidden lg:inline-flex items-center gap-1.5 rounded-full border border-border/70 bg-card/70 px-3 py-2 text-xs font-semibold text-foreground transition-colors hover:border-brand-violet hover:text-brand-violet"
             aria-label={
               lang === "en"
                 ? "التبديل إلى العربية"
                 : "Switch to English"
             }
           >
-            <Globe className="size-4" aria-hidden="true" />
+            <Globe className="size-4" />
             {t.nav.switch}
           </button>
 
@@ -99,7 +100,7 @@ export function Header() {
             href={REGISTER_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden rounded-full bg-gradient-ink px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow-[var(--shadow-card)] transition-transform duration-300 hover:scale-[1.03] sm:inline-flex"
+            className="hidden rounded-full bg-gradient-ink px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow-[var(--shadow-card)] transition-transform duration-300 hover:scale-[1.03] sm:inline-flex lg:inline-flex"
           >
             {t.nav.register}
           </a>
@@ -109,9 +110,7 @@ export function Header() {
           <img
             src={unfpaLogo}
             alt="UNFPA Syria"
-            width={192}
-            height={62}
-            className="hidden h-7 max-w-[120px] object-contain md:block lg:h-8"
+            className="block h-6 w-auto max-w-[90px] object-contain sm:h-8 sm:max-w-[120px]"
           />
 
 
@@ -157,6 +156,18 @@ export function Header() {
             ))}
 
 
+            {/* Language in mobile menu */}
+            <button
+              type="button"
+              onClick={toggle}
+              className="mt-2 flex items-center justify-center gap-2 rounded-full border border-border/70 px-4 py-3 text-sm font-semibold"
+            >
+              <Globe className="size-4" />
+              {t.nav.switch}
+            </button>
+
+
+            {/* Register */}
             <a
               href={REGISTER_URL}
               target="_blank"
