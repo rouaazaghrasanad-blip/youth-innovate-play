@@ -14,7 +14,9 @@ export function Header() {
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
     onScroll();
+
     window.addEventListener("scroll", onScroll, { passive: true });
+
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
@@ -33,21 +35,34 @@ export function Header() {
       dir="ltr"
       className={cn(
         "fixed inset-x-0 top-0 z-50 transition-all duration-500",
-        scrolled ? "glass-panel shadow-[var(--shadow-card)]" : "bg-transparent",
+        scrolled
+          ? "glass-panel shadow-[var(--shadow-card)]"
+          : "bg-transparent"
       )}
     >
-      <div className="mx-auto flex h-20 max-w-7xl items-center gap-4 px-4 sm:px-6 lg:px-8">
-        <a href="#home" className="flex shrink-0 items-center" aria-label="Sanad Youth for Development">
+      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-2 px-3 sm:px-6 lg:px-8">
+
+        {/* Sanad Logo */}
+        <a
+          href="#home"
+          className="flex min-w-0 shrink items-center"
+          aria-label="Sanad Youth for Development"
+        >
           <img
             src={sanadLogo}
             alt="Sanad Youth for Development"
             width={160}
             height={190}
-            className="h-11 w-auto sm:h-12"
+            className="h-9 w-auto object-contain sm:h-12"
           />
         </a>
 
-        <nav className="mx-auto hidden items-center gap-1 lg:flex" aria-label="Main">
+
+        {/* Desktop Navigation */}
+        <nav
+          className="mx-auto hidden items-center gap-1 lg:flex"
+          aria-label="Main"
+        >
           {links.map((l) => (
             <a
               key={l.href}
@@ -59,17 +74,27 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="ms-auto flex items-center gap-2 lg:ms-0">
+
+        {/* Actions */}
+        <div className="flex shrink-0 items-center gap-2">
+
+          {/* Language */}
           <button
             type="button"
             onClick={toggle}
-            className="inline-flex items-center gap-1.5 rounded-full border border-border/70 bg-card/70 px-3 py-2 text-xs font-semibold text-foreground transition-colors hover:border-brand-violet hover:text-brand-violet"
-            aria-label={lang === "en" ? "التبديل إلى العربية" : "Switch to English"}
+            className="inline-flex items-center gap-1.5 rounded-full border border-border/70 bg-card/70 px-2.5 py-2 text-xs font-semibold text-foreground transition-colors hover:border-brand-violet hover:text-brand-violet sm:px-3"
+            aria-label={
+              lang === "en"
+                ? "التبديل إلى العربية"
+                : "Switch to English"
+            }
           >
             <Globe className="size-4" aria-hidden="true" />
             {t.nav.switch}
           </button>
 
+
+          {/* Register */}
           <a
             href={REGISTER_URL}
             target="_blank"
@@ -79,14 +104,18 @@ export function Header() {
             {t.nav.register}
           </a>
 
+
+          {/* UNFPA Logo */}
           <img
             src={unfpaLogo}
             alt="UNFPA Syria"
             width={192}
             height={62}
-            className="hidden h-8 w-auto shrink-0 sm:block"
+            className="hidden h-7 max-w-[120px] object-contain md:block lg:h-8"
           />
 
+
+          {/* Mobile Menu */}
           <button
             type="button"
             className="inline-flex size-10 items-center justify-center rounded-full border border-border/70 bg-card/70 lg:hidden"
@@ -94,18 +123,28 @@ export function Header() {
             aria-label={t.nav.menu}
             aria-expanded={open}
           >
-            {open ? <X className="size-5" /> : <Menu className="size-5" />}
+            {open ? (
+              <X className="size-5" />
+            ) : (
+              <Menu className="size-5" />
+            )}
           </button>
+
         </div>
+
       </div>
 
+
+      {/* Mobile Menu */}
       {open && (
         <div className="glass-panel border-t border-border/60 lg:hidden">
+
           <nav
             className="mx-auto flex max-w-7xl flex-col px-4 py-3 sm:px-6"
             aria-label="Mobile"
             dir={t.dir}
           >
+
             {links.map((l) => (
               <a
                 key={l.href}
@@ -116,6 +155,8 @@ export function Header() {
                 {l.label}
               </a>
             ))}
+
+
             <a
               href={REGISTER_URL}
               target="_blank"
@@ -124,9 +165,12 @@ export function Header() {
             >
               {t.nav.register}
             </a>
+
           </nav>
+
         </div>
       )}
+
     </header>
   );
 }
