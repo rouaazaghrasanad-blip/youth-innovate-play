@@ -1,6 +1,6 @@
 import { Facebook, Instagram, Linkedin, Mail } from "lucide-react";
-import sanadLogo from "@/assets/sanad-youth.png.asset.json";
-import unfpaLogo from "@/assets/unfpa-syria.png.asset.json";
+import sanadLogo from "@/assets/sanad-youth.png";
+import unfpaLogo from "@/assets/unfpa-syria.webp";
 import { useLang } from "@/lib/lang";
 
 const socials = [
@@ -17,7 +17,7 @@ export function Footer() {
         <div className="grid gap-10 md:grid-cols-3">
           <div>
             <img
-              src={sanadLogo.url}
+              src={sanadLogo}
               alt="Sanad Youth for Development"
               loading="lazy"
               width={160}
@@ -61,7 +61,7 @@ export function Footer() {
 
           <div className="md:text-end">
             <img
-              src={unfpaLogo.url}
+              src={unfpaLogo}
               alt="UNFPA Syria"
               loading="lazy"
               width={192}
