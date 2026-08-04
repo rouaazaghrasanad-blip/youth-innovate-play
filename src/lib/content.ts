@@ -52,7 +52,7 @@ export const content = {
       title: "Pick a challenge worth playing",
       note: "5–6 final themes will be selected for the camp.",
       items: [
-        { title: "Physical Health & Wellbeing", text: "Health awareness for young people.", icon: "HeartPulse" },
+        { title: "Physical Health & Wellbeing", text: "Health awareness for Adolescents and Youth.", icon: "HeartPulse" },
         { title: "Safe Digital Communication", text: "Digital protection and online safety.", icon: "ShieldCheck" },
         { title: "Climate Action", text: "Sustainability and the environment.", icon: "Leaf" },
         { title: "Mental Health", text: "Wellbeing and managing pressure.", icon: "Brain" },
@@ -62,7 +62,7 @@ export const content = {
     who: {
       eyebrow: "Who can apply",
       title: "Built for creators of every discipline",
-      note: "Young women and young people are strongly encouraged to apply, as are persons with disabilities.",
+      note: "Young women and young people are strongly encouraged to apply, as are persons with disabilities. please add in the beginning (adolescents girls and boys...)",
       items: [
         { title: "Game Designers", text: "Shape the rules and the play.", icon: "Dices" },
         { title: "Game Developers", text: "Bring the game to life in code.", icon: "Code2" },
@@ -88,7 +88,7 @@ export const content = {
     training: {
       eyebrow: "Training",
       title: "Four days that change how you see games",
-      meta: "24–27 Aug · 30 training hours",
+      meta: "24–27 Aug ",
       items: [
         { day: "Day 1", title: "Introduction to Game Design", text: "Game elements, types and what keeps players playing.", icon: "Puzzle" },
         { day: "Day 2", title: "Gameplay, Systems & Concept", text: "Mechanics, player journey and a mini design document.", icon: "Layers" },
@@ -116,7 +116,7 @@ export const content = {
       items: [
         { q: "Do I need coding experience?", a: "No. Designers, storytellers, artists, activists and developers are all welcome." },
         { q: "How many people are selected?", a: "40 participants join the training, and the strongest 30 continue to the innovation camp." },
-        { q: "How long is the training?", a: "Four days, 30 training hours, held in person from 24 to 27 August." },
+        { q: "Target age group?", a: "Adolescent girls and boys, and young women and men aged 16 to 29 years." },
         { q: "Do I apply as a team or alone?", a: "You apply individually. Teams are built during the program." },
         { q: "Is there a cost to participate?", a: "No. Participation in the program is free." },
       ],
@@ -155,7 +155,7 @@ export const content = {
       title1: "تعلّم. ابتكر. العب.",
       title2: "واصنع التغيير.",
       subtitle:
-        "بلاي فور إمباكت برنامج يحوّل الطاقات الشابة إلى صنّاع ألعاب. تدرّب مع خبراء، طوّر ألعاباً رقمية ولوحية حول قضايا مجتمعية حقيقية، واعرض نموذجك الأولي.",
+        "play 4 impact برنامج يحوّل الطاقات الشابة إلى صنّاع ألعاب. تدرّب مع خبراء، طوّر ألعاباً رقمية ولوحية حول قضايا مجتمعية حقيقية، واعرض نموذجك الأولي.",
       primary: "سجّل الآن",
       secondary: "اكتشف الرحلة",
       stats: [
@@ -169,7 +169,7 @@ export const content = {
       eyebrow: "عن البرنامج",
       title: "ألعاب هادفة يصنعها الشباب",
       body:
-        "بلاي فور إمباكت برنامج تفاعلي يمكّن اليافعين واليافعات والشباب من تطوير ألعاب تعليمية وتوعوية، رقمية وغير رقمية، تعالج قضايا محورية في مجتمعاتهم.",
+        "play 4 im برنامج تفاعلي يمكّن اليافعين واليافعات والشباب من تطوير ألعاب تعليمية وتوعوية، رقمية وغير رقمية، تعالج قضايا محورية في مجتمعاتهم.",
       body2:
         "ينفَّذ كمسار متكامل: تأهيل تدريبي متخصص أولاً، ثم معسكر ابتكار تنافسي تتحول فيه الأفكار إلى نماذج ألعاب قابلة للتجريب ضمن فرق متعددة التخصصات.",
       points: [
@@ -220,7 +220,7 @@ export const content = {
     training: {
       eyebrow: "التدريب",
       title: "أربعة أيام تغيّر نظرتك إلى الألعاب",
-      meta: "24–27 آب · 30 ساعة تدريبية",
+      meta: "24–27 آب ",
       items: [
         { day: "اليوم الأول", title: "مدخل إلى تصميم الألعاب", text: "عناصر اللعبة وأنواعها وما يبقي اللاعب متفاعلاً.", icon: "Puzzle" },
         { day: "اليوم الثاني", title: "الميكانيكيات وبناء المفهوم", text: "الأنظمة ورحلة اللاعب ووثيقة تصميم مبسطة.", icon: "Layers" },
@@ -247,8 +247,8 @@ export const content = {
       title: "معلومات تهمّك",
       items: [
         { q: "هل أحتاج خبرة في البرمجة؟", a: "لا. المصممون والرواة والفنانون والناشطون والمطورون جميعهم مرحّب بهم." },
+        { q: "ماهي الفئة العمرية المطلوبة", a: "اليافعون واليافعات  الشباب والشابات من عمر 16 ل 29." },
         { q: "كم عدد المقبولين؟", a: "40 مشاركاً ومشاركة في التدريب، ويتابع أفضل 30 إلى معسكر الابتكار." },
-        { q: "ما مدة التدريب؟", a: "أربعة أيام و30 ساعة تدريبية حضورياً من 24 إلى 27 آب." },
         { q: "هل أسجّل بشكل فردي أم ضمن فريق؟", a: "التسجيل فردي، وتُبنى الفرق خلال البرنامج." },
         { q: "هل هناك رسوم للمشاركة؟", a: "لا، المشاركة في البرنامج مجانية." },
       ],
