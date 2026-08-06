@@ -1,4 +1,4 @@
-export const REGISTER_URL = "https://forms.gle/YOUR-GOOGLE-FORM-ID"; // TODO: replace with the real Google Form URL
+export const REGISTER_URL = "https://forms.cloud.microsoft/r/VFBwjdYmTp"; // TODO: replace with the real Google Form URL
 
 export type Lang = "en" | "ar";
 
