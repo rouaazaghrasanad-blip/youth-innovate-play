@@ -62,7 +62,7 @@ export const content = {
     who: {
       eyebrow: "Who can apply",
       title: "Built for creators of every discipline",
-      note: "Young women and young people are strongly encouraged to apply, as are persons with disabilities. please add in the beginning (adolescents girls and boys...)",
+      note: "Young women and young people are strongly encouraged to apply, as are persons with disabilities.",
       items: [
         { title: "Game Designers", text: "Shape the rules and the play.", icon: "Dices" },
         { title: "Game Developers", text: "Bring the game to life in code.", icon: "Code2" },
@@ -169,7 +169,7 @@ export const content = {
       eyebrow: "عن البرنامج",
       title: "ألعاب هادفة يصنعها الشباب",
       body:
-        "play 4 im برنامج تفاعلي يمكّن اليافعين واليافعات والشباب من تطوير ألعاب تعليمية وتوعوية، رقمية وغير رقمية، تعالج قضايا محورية في مجتمعاتهم.",
+        "play 4 impact برنامج تفاعلي يمكّن اليافعين واليافعات والشباب من تطوير ألعاب تعليمية وتوعوية، رقمية وغير رقمية، تعالج قضايا محورية في مجتمعاتهم.",
       body2:
         "ينفَّذ كمسار متكامل: تأهيل تدريبي متخصص أولاً، ثم معسكر ابتكار تنافسي تتحول فيه الأفكار إلى نماذج ألعاب قابلة للتجريب ضمن فرق متعددة التخصصات.",
       points: [
