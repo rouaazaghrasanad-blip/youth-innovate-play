@@ -77,18 +77,18 @@ export const content = {
       title: "Seven stages, one prototype",
       items: [
         { title: "Registration", text: "Open call for young creators.", icon: "PenLine", date: "" },
-        { title: "Pre-training", text: "4 days, 30 hours of foundations.", icon: "GraduationCap", date: "24–27 Aug" },
+        { title: "Pre-training", text: "4 days, 30 hours of foundations.", icon: "GraduationCap", date: "30–31 Aug & 1–2 Sep" },
         { title: "Selection", text: "The strongest 30 move forward.", icon: "Filter", date: "" },
-        { title: "Innovation Camp", text: "3 intensive days of building.", icon: "Rocket", date: "1–3 Sep" },
+        { title: "Innovation Camp", text: "3 intensive days of building.", icon: "Rocket", date: "Sep" },
         { title: "Prototype Development", text: "Refine, playtest, iterate.", icon: "Wrench", date: "" },
-        { title: "Final Showcase", text: "Games meet their audience.", icon: "Sparkles", date: "23 Sep" },
+        { title: "Final Showcase", text: "Games meet their audience.", icon: "Sparkles", date: "Sep" },
         { title: "Awards", text: "Jury and audience prizes.", icon: "Trophy", date: "" },
       ],
     },
     training: {
       eyebrow: "Training",
       title: "Four days that change how you see games",
-      meta: "24–27 Aug ",
+      meta: "30–31 Aug & 1–2 Sep",
       items: [
         { day: "Day 1", title: "Introduction to Game Design", text: "Game elements, types and what keeps players playing.", icon: "Puzzle" },
         { day: "Day 2", title: "Gameplay, Systems & Concept", text: "Mechanics, player journey and a mini design document.", icon: "Layers" },
@@ -98,7 +98,7 @@ export const content = {
     },
     camp: {
       eyebrow: "Innovation camp",
-      title: "1–3 September",
+      title: "September",
       items: [
         { day: "Day 1", title: "Inspiration & Challenge Framing", icon: "Lightbulb" },
         { day: "Day 2", title: "Concept Development", icon: "Compass" },
@@ -107,7 +107,7 @@ export const content = {
     },
     showcase: {
       eyebrow: "Final showcase",
-      title: "23 September",
+      title: "September",
       items: ["Prototype Showcase", "Audience Voting", "Networking Session", "Awards & Closing"],
     },
     faq: {
@@ -209,18 +209,18 @@ export const content = {
       title: "سبع مراحل نحو نموذج أولي",
       items: [
         { title: "التسجيل", text: "دعوة مفتوحة للمبدعين والمبدعات.", icon: "PenLine", date: "" },
-        { title: "التدريب التأهيلي", text: "4 أيام و30 ساعة تأسيسية.", icon: "GraduationCap", date: "24–27 آب" },
+        { title: "التدريب التأهيلي", text: "4 أيام و30 ساعة تأسيسية.", icon: "GraduationCap", date: "30–31 آب و1–2 أيلول" },
         { title: "الاختيار", text: "انتقال أفضل 30 مشاركاً ومشاركة.", icon: "Filter", date: "" },
-        { title: "معسكر الابتكار", text: "3 أيام مكثفة من البناء.", icon: "Rocket", date: "1–3 أيلول" },
+        { title: "معسكر الابتكار", text: "3 أيام مكثفة من البناء.", icon: "Rocket", date: "أيلول" },
         { title: "تطوير النموذج الأولي", text: "تحسين واختبار وتكرار.", icon: "Wrench", date: "" },
-        { title: "المعرض الختامي", text: "الألعاب تلتقي جمهورها.", icon: "Sparkles", date: "23 أيلول" },
+        { title: "المعرض الختامي", text: "الألعاب تلتقي جمهورها.", icon: "Sparkles", date: "أيلول" },
         { title: "الجوائز", text: "جوائز لجنة التحكيم والجمهور.", icon: "Trophy", date: "" },
       ],
     },
     training: {
       eyebrow: "التدريب",
       title: "أربعة أيام تغيّر نظرتك إلى الألعاب",
-      meta: "24–27 آب ",
+      meta: "30–31 آب و1–2 أيلول",
       items: [
         { day: "اليوم الأول", title: "مدخل إلى تصميم الألعاب", text: "عناصر اللعبة وأنواعها وما يبقي اللاعب متفاعلاً.", icon: "Puzzle" },
         { day: "اليوم الثاني", title: "الميكانيكيات وبناء المفهوم", text: "الأنظمة ورحلة اللاعب ووثيقة تصميم مبسطة.", icon: "Layers" },
@@ -230,7 +230,7 @@ export const content = {
     },
     camp: {
       eyebrow: "معسكر الابتكار",
-      title: "1–3 أيلول",
+      title: "أيلول",
       items: [
         { day: "اليوم الأول", title: "الإلهام وتأطير التحديات", icon: "Lightbulb" },
         { day: "اليوم الثاني", title: "تطوير المفهوم", icon: "Compass" },
@@ -239,7 +239,7 @@ export const content = {
     },
     showcase: {
       eyebrow: "المعرض الختامي",
-      title: "23 أيلول",
+      title: "أيلول",
       items: ["معرض النماذج الأولية", "تصويت الجمهور", "جلسة التشبيك", "الجوائز والختام"],
     },
     faq: {
